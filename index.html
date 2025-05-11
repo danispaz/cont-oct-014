@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">BPO Contábil e Tributário - Transportes
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+Organiza e registra todas as movimentações financeiras e fiscais da empresa de forma correta e dentro da lei. Monta relatórios como DRE, balancete e balanço anual, entrega as obrigações exigidas pelo governo (ECD e ECF), acompanha os resultados e apresenta indicadores para ajudar na tomada de decisões. Garante economia com estrutura interna, reduz riscos tributários e apoia a gestão com informações seguras e úteis.
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">OCT014 </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Contabilidade</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star icon"></i>Classificação BCG</label>
+      <div class="form-value">Estrela</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="118" data-end="963">
+<li data-start="118" data-end="248" class="">
+<p data-start="121" data-end="248" class=""><strong data-start="121" data-end="147">Escrituração Contábil:</strong> Realização da escrituração contábil em conformidade com as normas e princípios contábeis vigentes.</p>
+</li>
+<li data-start="249" data-end="354" class="">
+<p data-start="252" data-end="354" class=""><strong data-start="252" data-end="278">Análise e Conferência:</strong> Verificação e conferência dos Demonstrativos Contábeis (DRE e Balancete).</p>
+</li>
+<li data-start="355" data-end="448" class="">
+<p data-start="358" data-end="448" class=""><strong data-start="358" data-end="387">Elaboração de Relatórios:</strong> Elaboração do Balanço Anual e Demonstrativo de Resultados.</p>
+</li>
+<li data-start="449" data-end="570" class="">
+<p data-start="452" data-end="570" class=""><strong data-start="452" data-end="478">Encerramento Contábil:</strong> Fechamento trimestral da contabilidade, ajustado ao período mais adequado para a empresa.</p>
+</li>
+<li data-start="571" data-end="662" class="">
+<p data-start="574" data-end="662" class=""><strong data-start="574" data-end="612">Indicadores Econômico-Financeiros:</strong> Geração e análise de indicadores de desempenho.</p>
+</li>
+<li data-start="663" data-end="745" class="">
+<p data-start="666" data-end="745" class=""><strong data-start="666" data-end="692">Obrigações Acessórias:</strong> Envio das obrigações acessórias anuais (ECD, ECF).</p>
+</li>
+<li data-start="746" data-end="841" class="">
+<p data-start="749" data-end="841" class=""><strong data-start="749" data-end="772">Notas Explicativas:</strong> Elaboração de notas explicativas para o encerramento do exercício.</p>
+</li>
+<li data-start="842" data-end="963" class="">
+<p data-start="845" data-end="963" class=""><strong data-start="845" data-end="872">Análise e Apresentação:</strong> Análise das demonstrações contábeis e reunião trimestral de apresentação dos resultados.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ol data-start="1002" data-end="1294">
+<li data-start="1002" data-end="1047" class="">
+<p data-start="1004" data-end="1047" class="">Falta de controle e organização contábil.</p>
+</li>
+<li data-start="1048" data-end="1123" class="">
+<p data-start="1050" data-end="1123" class="">Risco de autuações fiscais por descumprimento de obrigações acessórias.</p>
+</li>
+<li data-start="1124" data-end="1194" class="">
+<p data-start="1126" data-end="1194" class="">Dificuldade na análise e interpretação de indicadores financeiros.</p>
+</li>
+<li data-start="1195" data-end="1248" class="">
+<p data-start="1197" data-end="1248" class="">Falta de transparência nas informações contábeis.</p>
+</li>
+<li data-start="1249" data-end="1294" class="">
+<p data-start="1251" data-end="1294" class="">Custo elevado com setor contábil interno.</p>
+</li>
+</ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ol data-start="1322" data-end="1583">
+<li data-start="1322" data-end="1373" class="">
+<p data-start="1324" data-end="1373" class="">Conformidade com as normas e exigências legais.</p>
+</li>
+<li data-start="1374" data-end="1423" class="">
+<p data-start="1376" data-end="1423" class="">Redução de custos com setor contábil interno.</p>
+</li>
+<li data-start="1424" data-end="1476" class="">
+<p data-start="1426" data-end="1476" class="">Segurança nas informações financeiras e fiscais.</p>
+</li>
+<li data-start="1477" data-end="1536" class="">
+<p data-start="1479" data-end="1536" class="">Indicadores financeiros claros para tomada de decisões.</p>
+</li>
+<li data-start="1537" data-end="1583" class="">
+<p data-start="1539" data-end="1583" class="">Suporte contínuo com reuniões trimestrais.</p>
+</li>
+</ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ol data-start="1615" data-end="1992">
+<li data-start="1615" data-end="1712" class="">
+<p data-start="1617" data-end="1712" class="">Ao identificar empresas do setor de transporte que não possuem estrutura contábil organizada.</p>
+</li>
+<li data-start="1713" data-end="1781" class="">
+<p data-start="1715" data-end="1781" class="">Durante auditorias fiscais que indiquem desorganização contábil.</p>
+</li>
+<li data-start="1782" data-end="1855" class="">
+<p data-start="1784" data-end="1855" class="">Ao revisar a carga tributária e o planejamento financeiro da empresa.</p>
+</li>
+<li data-start="1856" data-end="1918" class="">
+<p data-start="1858" data-end="1918" class="">Quando o cliente deseja reduzir custos com setor contábil.</p>
+</li>
+<li data-start="1919" data-end="1992" class="">
+<p data-start="1921" data-end="1992" class="">Sempre que o cliente busca otimizar sua gestão contábil e financeira.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Oferecemos um serviço completo de BPO Contábil e Tributário para o setor de Transportes, garantindo conformidade fiscal, segurança nas informações financeiras e suporte contínuo com análises periódicas e apresentação de resultados, proporcionando clareza e eficiência na gestão contábil da empresa.
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>BPO Financeiro</td>
+            <td>Complementa o controle contábil com gestão financeira.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Consultoria e Assessoria Contábil / Tributária</td>
+            <td>Oferece suporte técnico para questões complexas.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Implantação Contábil Tributário</td>
+            <td>Garante que o cliente inicie o BPO com uma base sólida.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Parametrização Contábil/Tributária em Sistema Operacional</td>
+            <td>Assegura que o sistema utilizado esteja configurado corretamente.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Revisão de Grade Tributária</td>
+            <td>Verifica a correta aplicação das alíquotas e tributos.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Regularização de Obra</td>
+            <td>Adequa a contabilidade para empresas do setor de construção.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Planejamento Tributário</td>
+            <td>Identifica oportunidades de economia fiscal.</td>
+            <td>Gestão Tributária</td>
+        </tr>
+        <tr>
+            <td>Compliance Tributário</td>
+            <td>Garante que o cliente esteja em conformidade com as normas fiscais.</td>
+            <td>Gestão Tributária</td>
+        </tr>
+        <tr>
+            <td>Subvenções para Investimento</td>
+            <td>Complementa o planejamento fiscal e tributário.</td>
+            <td>Gestão Tributária</td>
+        </tr>
+        <tr>
+            <td>Recuperação de Tributos – PIS/COFINS</td>
+            <td>Complementa com a revisão de créditos fiscais.</td>
+            <td>Gestão Tributária</td>
+        </tr>
+        <tr>
+            <td>Planejamento Orçamentário e Fluxo de Caixa</td>
+            <td>Avalia o impacto financeiro das obrigações contábeis.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Suporte na análise e otimização dos resultados da empresa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+    </tbody>
+</table>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real</div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Recorrente</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Paraná, Santa Catarina, Rio Grande do Sul e Tocantins.</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Empresas com faturamento superior a R$ 5 milhões mensais.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ol data-start="4360" data-end="4624">
+<li data-start="4360" data-end="4425" class="">
+<p data-start="4363" data-end="4425" class="">Últimos demonstrativos contábeis (Balancete, Balanço e DRE).</p>
+</li>
+<li data-start="4426" data-end="4451" class="">
+<p data-start="4429" data-end="4451" class="">Certificado Digital.</p>
+</li>
+<li data-start="4452" data-end="4492" class="">
+<p data-start="4455" data-end="4492" class="">Preenchimento do formulário padrão.</p>
+</li>
+<li data-start="4493" data-end="4546" class="">
+<p data-start="4496" data-end="4546" class="">Últimos 3 meses do EFD ICMS e EFD Contribuições.</p>
+</li>
+<li data-start="4547" data-end="4624" class="">
+<p data-start="4550" data-end="4624" class="">Sistema Operacional utilizado e informações de integração com o Domínio.</p>
+</li>
+</ol>
+                </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ol data-start="4654" data-end="4851">
+<li data-start="4654" data-end="4712" class="">
+<p data-start="4656" data-end="4712" class="">Empresas de Transporte (Rodoviário, Aéreo e Marítimo).</p>
+</li>
+<li data-start="4713" data-end="4732" class="">
+<p data-start="4715" data-end="4732" class="">Agroindústrias.</p>
+</li>
+<li data-start="4733" data-end="4764" class="">
+<p data-start="4735" data-end="4764" class="">Cooperativas de Transporte.</p>
+</li>
+<li data-start="4765" data-end="4810" class="">
+<p data-start="4767" data-end="4810" class="">Distribuidores de Produtos Agropecuários.</p>
+</li>
+<li data-start="4811" data-end="4851" class="">
+<p data-start="4813" data-end="4851" class="">Empresas de Logística e Armazenagem.</p>
+</li>
+</ol>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>“Já tenho um contador que cuida disso.”</td>
+            <td>Acredita que já está sendo atendido.</td>
+            <td>Explicar que o BPO é uma gestão contábil completa, com suporte contínuo e análises aprofundadas.</td>
+        </tr>
+        <tr>
+            <td>“Parece caro para um serviço contábil.”</td>
+            <td>Não entende o valor agregado.</td>
+            <td>Mostrar que o serviço inclui gestão, análises e suporte técnico, além da contabilidade.</td>
+        </tr>
+        <tr>
+            <td>“Não quero perder o controle das minhas finanças.”</td>
+            <td>Medo de perder transparência.</td>
+            <td>Reforçar que o cliente terá acesso a relatórios e reuniões periódicas.</td>
+        </tr>
+        <tr>
+            <td>“Isso vai me dar problema com a Receita?”</td>
+            <td>Medo de fiscalização.</td>
+            <td>Garantir que o serviço é feito em conformidade com todas as normas legais.</td>
+        </tr>
+        <tr>
+            <td>“Meu sistema já faz toda a contabilidade.”</td>
+            <td>Confiança excessiva na automação.</td>
+            <td>Explicar que o BPO não é apenas a automação, mas sim uma gestão completa com análise especializada.</td>
+        </tr>
+        <tr>
+            <td>“Não sei se preciso de tudo isso.”</td>
+            <td>Dúvida sobre a necessidade.</td>
+            <td>Oferecer uma análise preliminar para demonstrar o impacto.</td>
+        </tr>
+    </tbody>
+</table>
+
+                     
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Proprietário, Diretor executivo 	</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece BPO Contábil e Tributário especializado para o setor de transportes, com processos automatizados, conhecimento profundo da legislação específica e atendimento consultivo, garantindo que o cliente tenha conformidade e eficiência operacional.
+
+Nosso diferencial está na classificação contábil correta dos insumos (combustíveis, peças, pneus), gestão eficiente dos créditos de ICMS e PIS/COFINS, apuração de tributos com base nas regras estaduais e suporte em fiscalizações, assegurando tranquilidade, economia e segurança contábil.
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
